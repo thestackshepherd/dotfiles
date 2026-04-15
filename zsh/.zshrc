@@ -78,10 +78,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# ----- Environment Variables ------ #
+export LANG=en_US.UTF-8
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export GTK_THEME=Adwaita:dark
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -100,7 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ----- functions ----- #
+sshs() {
+    command sshs --template='kitty +kitten ssh "{{{name}}}"' "$@"
+}
+# ---- aliases ----- #
+alias zshconfig="nvim ~/.config/zsh/.zshrc"
+alias ohmyzsh="nvim ~/.config/oh-my-zsh"
+alias ssh='kitty +kitten ssh'
+
+# ------  npm global prefix ------ #
+export NPM_CONFIG_PREFIX="$HOME/.npm-global"
+export PATH="$HOME/.npm-global/bin:$PATH"
