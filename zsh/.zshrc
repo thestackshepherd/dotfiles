@@ -72,7 +72,7 @@ ZSH_THEME="dallas"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker 1password archlinux docker-compose fzf gh kitty tmux zsh-navigation-tools zsh-interactive-cd python)
 
 source $ZSH/oh-my-zsh.sh
 
