@@ -1,7 +1,7 @@
 {
 "layer": "top",
 "position": "top",
-"height": 15,
+"height": 28,
 "margin-bottom":0,
 "margin-top":0,
 
@@ -10,15 +10,16 @@
 "modules-right":  ["tray","idle_inhibitor","pulseaudio","backlight","battery","clock"],
 
 "battery": {
+  "bat": "BAT0",
   "states": {
-  "warning": 30,
-  "critical": 15
+    "warning": 30,
+    "critical": 15
   },
-  "format": "{icon}&#8239;{capacity}%",
-  "format-charging": "&#8239;{capacity}%",
-  "format-plugged": "&#8239;{capacity}%",
+  "format": "{icon} {capacity}%",
+  "format-charging": " {capacity}%",
+  "format-plugged": " {capacity}%",
   "format-alt": "{icon} {time}",
-  "format-icons": ["", "", "", "", "", "", ""]
+  "format-icons": ["", "", "", "", ""]
 },
 "hyprland/workspaces": {
      "sort-by-name": true,
@@ -64,6 +65,7 @@
   "max-length": 20,
   "min-length": 6,
   "format-alt": "{essid}",
+  "on-click": "kitty --hold -e nmtui"
 },
 "idle_inhibitor": {
     "format": "{icon}",

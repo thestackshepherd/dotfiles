@@ -1,12 +1,25 @@
 *{
-    font-family: Inter;
-    font-size: 10px;
+    font-family: Inter, Symbols Nerd Font, LiterationMono Nerd Font;
+    font-size: 13px;
     min-height: 0;
-    color: white;
+    color: #eceff4;
 }
 
+#cpu { color: #88c0d0; }
+#memory { color: #a3be8c; }
+#network { color: #81a1c1; }
+#battery { color: #ebcb8b; }
+#battery.charging { color: #a3be8c; }
+#battery.critical:not(.charging) { color: #bf616a; }
+#pulseaudio { color: #b48ead; }
+#backlight { color: #ebcb8b; }
+#clock { color: #eceff4; }
+#idle_inhibitor { color: #88c0d0; }
+#mpd { color: #b48ead; }
+#tray { color: #eceff4; }
+
 window#waybar {
-    background-color: transparent;
+    background-color: rgba(30, 30, 46, 0.75);
 }
 
 #workspaces{
