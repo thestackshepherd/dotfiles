@@ -25,9 +25,9 @@ set $menu rofi -show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output LVDS-1   resolution 1366x768  position 0,0     bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output HDMI-A-1 resolution 1920x1080 position 1366,0  bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output VGA-1    resolution 1920x1080 position 3286,0  bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output LVDS-1   resolution 1366x768  position 0,0     bg /home/thestackshepherd/photos/bg/Jacob_Wrestles_With_The_Angel.jpg fill
+output HDMI-A-1 resolution 1920x1080 position 1366,0  bg /home/thestackshepherd/photos/bg/Jacob_Wrestles_With_The_Angel.jpg fill
+output VGA-1    resolution 1920x1080 position 3286,0  bg /home/thestackshepherd/photos/bg/Jacob_Wrestles_With_The_Angel.jpg fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
