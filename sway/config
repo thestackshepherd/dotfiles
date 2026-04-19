@@ -6,8 +6,8 @@
 
 # ----- Environment ------ #
 
-exec systemctl --user set-environment QT_QPA_PLATFORMTHEME=gtk3
-exec_always export GTK_THEME=Adwaita:dark
+exec systemctl --user set-environment QT_QPA_PLATFORMTHEME=gtk3 GTK_THEME=Adwaita:dark
+exec dbus-update-activation-environment --systemd GTK_THEME GTK_APPLICATION_PREFER_DARK_THEME
 
 # ----- Logo key. Mod1 for Alt. ----- #
 set $mod Mod4
