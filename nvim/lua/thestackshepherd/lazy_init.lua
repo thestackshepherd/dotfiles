@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "jschwartz.lazy",
+    spec = "thestackshepherd.lazy",
     change_detection = { notify = false }
 })
