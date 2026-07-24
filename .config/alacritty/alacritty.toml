@@ -1,0 +1,42 @@
+[font]
+normal =   { family = "LiterationMono Nerd Font Mono", style = "Regular" }
+bold =   { family = "LiterationMono Nerd Font Mono", style = "Bold" }
+italic =   { family = "LiterationMono Nerd Font Mono", style = "Italic" }
+bold_italic =   { family = "LiterationMono Nerd Font Mono", style = "Bold Italic" }
+size =   14
+offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[general]
+import = [
+    "/home/thestackshepherd/.config/alacritty/themes/alacritty-theme/themes/gruvbox_material_hard_dark.toml",
+]
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+    bindings = [
+        { mouse = "Right", action = "PasteSelection" },
+        {mouse = "WheelUp", mods = "Control", action = "IncreaseFontSize"},
+        {mouse = "WheelDown", mods = "Control", action = "DecreaseFontSize"}
+    ]
+
+[env]
+TERM = "xterm-256color"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+padding = { x = 8, y = 8 }
+decorations = "full"   # "none" if want to switch for a borderless/tiling-WM-style look
+opacity = 1.0
+dynamic_title = true
+
+[keyboard]
+bindings = [
+  { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+]
