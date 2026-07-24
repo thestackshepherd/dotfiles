@@ -89,6 +89,10 @@ plugins=(
         )
 source $ZSH/oh-my-zsh.sh
 
+# Source Aliases and Functions ###############################################
+[ -f ~/.config/zsh/aliases.zsh ] && source ~/.config/zsh/aliases.zsh
+[ -f ~/.config/zsh/functions.zsh ] && source ~/.config/zsh/functions.zsh
+
 # Tool Initialization ###############################################
 [[ -s /home/thestackshepherd/.autojump/etc/profile.d/autojump.sh ]] && source /home/thestackshepherd/.autojump/etc/profile.d/autojump.sh
 [ -n "$(command -v cargo)" ] && source "$HOME/.cargo/env"
